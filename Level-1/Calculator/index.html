@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      type="Images/webp"
+      href="./Images/75064-logo-symbol-green-calculator-download-hd-png.webp"
+    />
+    <title>CALCULATOR</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="normal-text">Online Calculator</div>
+      <div class="calculator">
+        <div class="screen">
+          <input type="text" id="display_screen" name="display_screen" />
+        </div>
+        <div class="buttons">
+          <div class="flexed_btns">
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(7)">7</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(8)">8</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(9)">9</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(' + ')">+</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(4)">4</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(5)">5</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(6)">6</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(' - ')">-</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(1)">1</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(2)">2</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(3)">3</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(' * ')">X</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(' / ')">/</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString(0)">0</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="addIntoString('.')">.</button>
+            </div>
+            <div class="calc_btn">
+              <button type="button" onclick="operation()">=</button>
+            </div>
+            <div class="calc_btn" id="ans_btn">
+              <div class="centered-button">
+                <button type="button" onclick="againAnswer()">Ans</button>
+              </div>
+            </div>
+            <div class="calc_btn" id="ans_btn">
+              <div class="centered-button">
+                <button type="button" onclick="clearScreen()">AC</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
