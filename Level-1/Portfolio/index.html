@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main_page">
+      <!-- NAVBAR -->
+      <div class="navigation">
+        <div class="profile"></div>
+        <div class="profile_title">Shubham Kadariya</div>
+        <div class="social_links">
+          <div class="linkedInAvatar">
+            <div>
+              <a href="https://www.linkedin.com/in/shubhamkadariya/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="homeNav" onclick="displayHome()">
+          <a href="#cover" style="text-decoration: none">
+            <i
+              class="fa-solid fa-house"
+              style="font-size: 0.45rem; color: gray; margin-right: 0.25rem"
+            ></i>
+            Home
+          </a>
+        </div>
+        <div class="homeNav" onclick="displayAbout()">
+          <a href="#about" style="text-decoration: none">
+            <i
+              class="fa-solid fa-address-card"
+              style="font-size: 0.45rem; color: gray; margin-right: 0.25rem"
+            ></i>
+            About
+          </a>
+        </div>
+        <div class="homeNav" onclick="displayResume()">
+          <a href="#resume" style="text-decoration: none">
+            <i
+              class="fa-solid fa-file"
+              style="font-size: 0.45rem; color: gray; margin-right: 0.25rem"
+            ></i>
+            Resume
+          </a>
+        </div>
+        <div class="homeNav" onclick="displayPortfolio()">
+          <a href="#portfolio" style="text-decoration: none">
+            <i
+              class="fa-solid fa-briefcase"
+              style="font-size: 0.45rem; color: gray; margin-right: 0.25rem"
+            ></i>
+            Portfolio
+          </a>
+        </div>
+        <div class="homeNav" onclick="displayServices()">
+          <a href="#services" style="text-decoration: none">
+            <i
+              class="fa-solid fa-money-bill"
+              style="font-size: 0.45rem; color: gray; margin-right: 0.25rem"
+            ></i>
+            Services
+          </a>
+        </div>
+        <div
+          class="homeNav"
+          style="margin-bottom: 4px"
+          onclick="displayContact()"
+        >
+          <a href="#contact" style="text-decoration: none">
+            <i
+              class="fa-solid fa-address-book"
+              style="font-size: 0.45rem; color: gray; margin-right: 0.25rem"
+            ></i>
+            Contact
+          </a>
+        </div>
+      </div>
+      <!-- Cover Picture -->
+      <div class="cover" id="cover">
+        <div class="disapperingTexts" id="disapper"></div>
+      </div>
+      <!-- About Page -->
+      <div class="about" id="about">
+        <div class="aboutTitle">About</div>
+        <div class="aboutMe">
+          Welcome to my personal space! I am a passionate developer and lifelong
+          learner, committed to leveraging technology to solve complex problems.
+          My journey in the tech world has equipped me with a diverse skill set,
+          including web development and data analysis, allowing me to create
+          impactful digital experiences. I believe in the power of continuous
+          learning and collaboration, and I’m excited to share my journey with
+          you.
+        </div>
+        <div class="aboutFlex">
+          <div class="aboutPic"></div>
+          <div class="aboutTextsFlex">
+            <div class="aboutTitle" style="margin-left: 2.5rem">
+              MERN DEVELOPER
+            </div>
+            <div class="aboutInfo">
+              With a solid foundation in computer science, I have honed my
+              skills through various projects and real-world applications. My
+              experience spans across front-end development using the MERN
+              stack, as well as data analysis using Python, where I enjoy
+              transforming data into meaningful insights. Additionally, I hold
+              certifications in SQL and User Experience Design, enhancing my
+              ability to create user-centric solutions. Driven by curiosity, I
+              am eager to explore new technologies and contribute to innovative
+              projects that shape the future of our digital landscape.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Resume Page -->
+      <div class="resume" id="resume">
+        <div class="aboutTitle">Resume</div>
+        <div class="resumeDesc">
+          As a dedicated and passionate developer, I thrive at the intersection
+          of technology and creativity. My journey in the tech industry has
+          equipped me with a robust skill set in web development and data
+          analysis, enabling me to tackle diverse challenges and deliver
+          innovative solutions. I continuously strive for personal and
+          professional growth, actively seeking opportunities to expand my
+          knowledge and stay ahead in this rapidly evolving field. My goal is to
+          contribute my skills and insights to create impactful digital
+          experiences that drive results.
+        </div>
+        <div class="resumeFlex">
+          <div class="resumeContent">
+            I have a solid foundation in programming languages such as
+            JavaScript, HTML, and CSS, complemented by my proficiency in modern
+            frameworks like React and Node.js. My background includes hands-on
+            experience with various projects, from creating dynamic websites to
+            developing data-driven applications. Through internships and
+            collaborative projects, I have honed my ability to work effectively
+            in teams and adapt to different working environments. I am
+            particularly proud of my contributions to projects that emphasize
+            user experience and accessibility, ensuring that technology is
+            inclusive and user-friendly. As I continue my career, I aim to
+            leverage my technical expertise and problem-solving abilities to
+            make a meaningful impact in the tech landscape.
+          </div>
+          <div class="resumePoints">
+            <ul>
+              <li>Proficient in Programming Languages</li>
+              <li>Web Development Projects</li>
+              <li>Data Analysis Expertise</li>
+              <li>Collaborative Team Player</li>
+              <li>Continuous Learner</li>
+              <li>Problem-Solving Skills</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Page -->
+      <div class="portfolio" id="portfolio">
+        <div class="portfolioCard">
+          <div class="portfolioBg"></div>
+          <div class="portfolioIcon">
+            <i class="fa-solid fa-glass-water" style="font-size: 2rem"></i>
+          </div>
+          <div class="portfolioText">
+            <b> Coca-Cola Marketing Analysis Tool. </b>
+            In this project, I developed a marketing analysis tool for Coca-Cola
+            that helps identify trends and consumer preferences through data
+            visualization. Using Python and libraries such as Pandas and
+            Matplotlib, I gathered and analyzed sales data to provide actionable
+            insights for the marketing team. This tool enabled the team to make
+            data-driven decisions and refine their strategies, ultimately
+            enhancing the brand's reach and customer engagement.
+          </div>
+        </div>
+        <div class="portfolioCard">
+          <div class="portfolioBg"></div>
+          <div class="portfolioIcon">
+            <i class="fa-solid fa-money-bills" style="font-size: 2rem"></i>
+          </div>
+          <div class="portfolioText">
+            <b> Currency Converter Application. </b>
+            I created a Currency Converter application utilizing React and
+            TailwindCSS, designed to offer users a seamless experience when
+            converting currencies. The app integrates with a real-time currency
+            exchange API to provide accurate conversion rates, allowing users to
+            make informed financial decisions quickly. This project not only
+            strengthened my front-end development skills but also enhanced my
+            understanding of working with APIs and managing application state
+            effectively.
+          </div>
+        </div>
+        <div class="portfolioCard">
+          <div class="portfolioBg"></div>
+          <div class="portfolioIcon">
+            <i class="fa-solid fa-hippo" style="font-size: 2rem"></i>
+          </div>
+          <div class="portfolioText">
+            <b> Pokémon Dataset Exploration. </b>
+            For this project, I conducted an in-depth analysis of a Pokémon
+            dataset using Python's Pandas library. I performed data cleaning,
+            visualization, and statistical analysis to uncover patterns and
+            trends within the dataset. By creating interactive visualizations, I
+            showcased the strengths and weaknesses of various Pokémon, providing
+            insights that can enhance gameplay strategies. This project deepened
+            my data analysis skills and highlighted the importance of data in
+            gaming and decision-making processes.
+          </div>
+        </div>
+      </div>
+      <!-- Services Page -->
+      <div class="services" id="services">
+        <div class="portfolioCard">
+          <div class="portfolioBg"></div>
+          <div class="portfolioIcon">
+            <i class="fa-solid fa-globe" style="font-size: 2rem"></i>
+          </div>
+          <div
+            class="portfolioText"
+            style="font-size: 7px; margin-top: 0.5rem; padding: 4px"
+          >
+            <b> Web Development. </b>
+            I specialize in creating responsive and user-friendly websites that
+            offer seamless experiences across all devices. From front-end to
+            back-end development, I leverage modern technologies like React,
+            Node.js, and Tailwind CSS to build dynamic and efficient web
+            applications that meet your business needs.
+          </div>
+        </div>
+        <div class="portfolioCard">
+          <div class="portfolioBg"></div>
+          <div class="portfolioIcon">
+            <i class="fa-solid fa-chart-simple" style="font-size: 2rem"></i>
+          </div>
+          <div
+            class="portfolioText"
+            style="font-size: 7px; margin-top: 0.5rem; padding: 4px"
+          >
+            <b> Data Analysis & Visualization. </b>
+            With a strong foundation in data analysis, I help businesses make
+            data-driven decisions by providing insights from complex datasets.
+            Using tools like Python, Pandas, and Matplotlib, I deliver clear and
+            visually compelling reports that reveal key trends and
+            opportunities.
+          </div>
+        </div>
+        <div class="portfolioCard">
+          <div class="portfolioBg"></div>
+          <div class="portfolioIcon">
+            <i class="fa-solid fa-microchip" style="font-size: 2rem"></i>
+          </div>
+          <div
+            class="portfolioText"
+            style="font-size: 7px; margin-top: 0.5rem; padding: 4px"
+          >
+            <b> Tech Consulting. </b>
+            Need guidance on your next tech project? I offer personalized
+            consulting services to help you choose the right tools and
+            strategies for your business. Whether it's optimizing performance,
+            improving UI/UX, or integrating new technologies, I ensure your
+            digital transformation is smooth and effective.
+          </div>
+        </div>
+      </div>
+      <!-- Contacts Page -->
+      <div class="contact" id="contact">
+        <div class="aboutTitle">Contact</div>
+        <div class="contactInfo">
+          Feel free to reach out! Whether you have a project in mind, need
+          technical assistance, or just want to connect, I'm always open to new
+          opportunities and collaborations. Let's start a conversation and see
+          how we can create something great together!
+        </div>
+        <div class="contactMainCard">
+          <div class="contactCard">
+            <div class="contactGrid">
+              <div class="contactLogo" style="margin-right: 2.35rem">
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="color: white; font-size: 0.75rem"
+                ></i>
+              </div>
+              <div class="contactCardTitle">
+                <div class="contactCardBold" style="font-size: 9px">
+                  <b>Address</b>
+                </div>
+                <div>Kathmandu, Nepal</div>
+              </div>
+            </div>
+            <div class="contactGrid">
+              <div class="contactLogo" style="margin-right: 2.75rem">
+                <i
+                  class="fa-solid fa-phone"
+                  style="color: white; font-size: 0.75rem"
+                ></i>
+              </div>
+              <div class="contactCardTitle">
+                <div class="contactCardBold" style="font-size: 9px">
+                  <b>Call Us</b>
+                </div>
+                <div>+9779860335655</div>
+              </div>
+            </div>
+            <div class="contactGrid">
+              <div class="contactLogo">
+                <i
+                  class="fa-solid fa-envelope"
+                  style="color: white; font-size: 0.85rem"
+                ></i>
+              </div>
+              <div class="contactCardTitle">
+                <div class="contactCardBold" style="font-size: 9px">
+                  <b>Email Us</b>
+                </div>
+                <div>shubhamkadariya@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="contactCard2">
+            <div class="contactGridForm">
+              <div>
+                <label for="name">Your Name</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="name"
+                  style="font-size: 6px; padding: 2px; width: 100%; height: 7vh"
+                />
+              </div>
+            </div>
+            <div class="contactGridForm">
+              <div>
+                <label for="email">Your Email</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="email"
+                  style="font-size: 6px; padding: 2px; width: 100%; height: 7vh"
+                />
+              </div>
+            </div>
+            <div class="contactGridForm">
+              <div>
+                <label for="message">Your Message</label>
+              </div>
+              <div>
+                <textarea
+                  id="message"
+                  style="
+                    font-size: 6px;
+                    padding: 2px;
+                    width: 100%;
+                    height: 12vh;
+                  "
+                ></textarea>
+              </div>
+              <div class="contactGridForm" style="margin-left: 2.5rem">
+                <button
+                  type="button"
+                  class="btnContact"
+                  style="
+                    font-size: 8px;
+                    padding: 2px;
+                    width: 85%;
+                    height: 6vh;
+                    margin: 4px;
+                    text-align: center;
+                    background-color: skyblue;
+                    border: none;
+                    border-radius: 2px;
+                    color: white;
+                  "
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <pre style="margin-right: 4rem; margin-top: 0.25rem">
+            &copy; Copyright<b> Shubham Kadariya</b> All Rights Reserved
+          </pre>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+        reset: true,
+        duration: 2500,
+        delay: 400,
+      });
+      ScrollReveal().reveal(".cover", { delay: 500 });
+      ScrollReveal().reveal(".navigation", { delay: 500, origin: "left" });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: full;
+}
+
+.main_page {
+  width: full;
+  display: flex;
+  justify-content: space-around;
+  height: max-content;
+}
+
+.cover {
+  width: 85%;
+  background-image: url("./Pictures/coverPic.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.disapperingTexts {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Poppins", "sans-serif";
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 100vh;
+  background-color: black;
+}
+
+.profile {
+  width: 58%;
+  height: 19vh;
+  border-radius: 50%;
+  background-image: url("./Pictures/profile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.profile_title {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Poppins", "sans-serif";
+  margin: 0.5rem 0;
+}
+
+.social_links {
+  width: 80%;
+  height: 14vh;
+  background-color: transparent;
+  margin: 0.35rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedInAvatar {
+  width: 40%;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedInAvatar:hover {
+  background-color: skyblue;
+  cursor: pointer;
+}
+
+i {
+  font-size: 1rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  padding: 0.25rem;
+}
+
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.homeNav {
+  font-size: 0.5rem;
+  font-family: "Poppins", "sans-serif";
+  color: white;
+  text-decoration: none;
+  width: 20vw;
+  height: 6vh;
+  text-align: justify;
+  margin-left: 2rem;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+
+.homeNav a {
+  text-decoration: none;
+}
+
+.homeNav:hover {
+  background-color: white;
+  color: black;
+}
+
+.about {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #f7fafc;
+  display: none;
+}
+
+.aboutTitle {
+  font-family: "Poppins", "sans-serif";
+  font-weight: bold;
+  font-weight: 1.5rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+  text-decoration: underline 2px blue;
+}
+
+.aboutMe {
+  width: 95%;
+  text-align: justify;
+  font-size: 8px;
+  padding-left: 2rem;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 0.25rem;
+}
+
+.aboutFlex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 62vh;
+  padding: 2rem;
+}
+
+.aboutPic {
+  width: 35%;
+  height: 55vh;
+  border-radius: 2px;
+  background-color: bisque;
+  background-image: url("./Pictures/IMG_1168.JPG");
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.75);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutTextsFlex {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+.aboutInfo {
+  width: 100%;
+  padding-left: 1rem;
+  font-size: 8px;
+  font-family: "Barlow", sans-serif;
+}
+
+.resume {
+  width: 85%;
+  height: 100vh;
+  background-color: #f7fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  display: none;
+}
+.resumeDesc {
+  font-family: "Barlow", sans-serif;
+  font-size: 8px;
+  margin: 1rem;
+}
+.resumeFlex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+}
+.resumeContent {
+  width: 55%;
+  height: 50vh;
+  font-family: "Barlow", "sans-serif";
+  padding: 4px;
+  font-size: 8px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resumePoints {
+  width: 35%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  font-family: "Poppins", "sans-serif";
+  font-weight: bold;
+  font-size: 8px;
+}
+ul {
+  list-style-type: disc;
+}
+.portfolio {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+  background-color: #f7fafc;
+}
+
+.portfolioCard {
+  width: 30%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  border: 1px solid black;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+}
+
+.portfolioBg {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+
+.portfolioIcon {
+  width: 37%;
+  border-radius: 50%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  padding: 4px;
+}
+
+.portfolioIcon:hover {
+  background-color: skyblue;
+}
+
+.portfolioText {
+  width: 100%;
+  height: 40vh;
+  background: transparent;
+  text-align: justify;
+  font-size: 6.75px;
+  padding: 4px;
+  font-family: "Barlow", sans-serif;
+  color: white;
+}
+
+.services {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f7fafc;
+  display: none;
+}
+
+.contact {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #f7fafc;
+  display: none;
+}
+
+.contactInfo {
+  width: 98%;
+  font-size: 8px;
+  font-family: "Barlow", sans-serif;
+  padding: 6px;
+  padding-left: 0.75rem;
+  text-align: justify;
+}
+
+.contactMainCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactCard {
+  width: 38%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: 0 0.5rem;
+  margin-top: 0.5rem;
+  background: transparent;
+}
+
+.contactGrid {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+  font-size: 8px;
+}
+
+.contactLogo {
+  width: 12%;
+  height: 8vh;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.contactCardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactLogo:hover {
+  background-color: skyblue;
+}
+
+.contactCard2 {
+  width: 60%;
+  height: 55vh;
+  background: transparent;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  font-size: 8px;
+  font-family: "Barlow", sans-serif;
+}
+.contactGridForm {
+  width: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start;
+  margin: 4px;
+}
+
+.btnContact:hover {
+  cursor: pointer;
+}
+
+.footer {
+  height: 20vh;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", "sans-serif";
+  font-size: 0.5rem;
+}
